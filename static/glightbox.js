@@ -4,4 +4,5 @@ const lightbox = GLightbox({
   keyboardNavigation: true,
   closeButton: true,
   loop: true,
+  moreLength: "120",
 });
