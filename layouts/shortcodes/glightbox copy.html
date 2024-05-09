@@ -9,14 +9,11 @@
      data-glightbox="title:{{ .Get "title" | default "" }};description:{{ .Get "description" | default "" }}"
    {{end}}
 >
-<img src="{{ .Get "placeholder" }}" data-src="{{ .Get "src" }}" style="border-radius: 5px; max-width: 100%"
-     {{ if .Get "class" }}
-        class="{{ .Get "class" }}"
-     {{ end }}
+<img src = "{{ .Get "src" }}" style="border-radius: 5px; max-width: 100%"
      {{ if .Get "alt" }}
         alt="{{ .Get "alt" }}"
      {{ end }}
      {{ if .Get "title" }}
-        title="{{ .Get "title" }}"
+        title={{ .Get "title" }}
      {{ end }} />
 </a>
