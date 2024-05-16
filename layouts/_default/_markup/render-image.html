@@ -9,16 +9,19 @@
   title="{{ . }}"
   {{
   end
-  }}>
+  }}
+>
   <img
     src="{{ .Destination | safeURL }}"
     alt="{{ .Text }}"
     {{
     with
-    .Title
+    .Description
     }}
     title="{{ . }}"
+    alt="{{ .Text }}"
     {{
     end
-    }} />
+    }}
+  />
 </a>
